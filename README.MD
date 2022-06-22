@@ -21,7 +21,7 @@ This project has two parts. Each has its own README
 
 # Working example
 
-A working example has been deployed to IPFS using Fleek: 
+A working example has been deployed to IPFS using Fleek: https://red-lab-5824.on.fleek.co/
 
 
 # Application Flow
