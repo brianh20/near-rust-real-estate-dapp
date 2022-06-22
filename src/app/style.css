@@ -1,0 +1,42 @@
+#page {
+  padding: 2em;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/static/Inter-Regular.ttf') format('ttf'),
+    url('../fonts/static/Inter-Medium.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+.highlight {
+  border-radius: 5px;
+  border: 0.1em solid #262626;
+  padding: 0.5em 1em;
+}
+
+button:hover,
+button:focus,
+button:focus-within,
+.highlight:hover,
+.highlight:focus,
+.highlight:focus-within {
+  border-color: #5F8AFA;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+}

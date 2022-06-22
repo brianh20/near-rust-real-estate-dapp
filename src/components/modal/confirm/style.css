@@ -1,0 +1,38 @@
+#modal #container h1 {
+  text-align: center;
+}
+
+#modal #container .message {
+  font-size: 17px;
+  text-align: center;
+}
+
+#modal #container .actions {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-top: 1em;
+}
+
+#modal #container .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 2em;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+#modal #container .actions .yes {
+  background-color: lightseagreen;
+  color: white;
+}
+
+#modal #container .actions .no {
+  background-color: white;
+  color: lightseagreen;
+  border: 1px solid lightseagreen;
+  border-radius: 6px;
+}

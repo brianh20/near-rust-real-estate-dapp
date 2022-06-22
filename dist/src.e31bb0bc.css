@@ -1,0 +1,454 @@
+#page {
+  padding: 2em;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/Inter-Regular.3b99ff55.ttf') format('ttf'),
+    url('/Inter-Medium.ccf17ea8.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+.highlight {
+  border-radius: 5px;
+  border: 0.1em solid #262626;
+  padding: 0.5em 1em;
+}
+
+button:hover,
+button:focus,
+button:focus-within,
+.highlight:hover,
+.highlight:focus,
+.highlight:focus-within {
+  border-color: #5F8AFA;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+#appName {
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+}
+
+#newProperty {
+  margin-left: 0.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 26px;
+  height: 20px;
+  padding-top:5px;
+  border: 1px solid lightseagreen;
+  color: lightseagreen;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#page #user {
+  text-align: right;
+}
+
+#page #user button {
+  margin-left: 1em;
+}
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+#modal #container {
+  background-color: white;
+  padding: 1.4em;
+  border-radius: 12px;
+}
+
+#modal #container h1 {
+  text-align: center;
+}
+
+#modal #container .field {
+  display: flex;
+  align-items: center;
+}
+
+#modal #container .field span {
+  font-size: 18px;
+}
+
+#modal #container .field input {
+  margin-left: 2em;
+  margin-right: 0.4em;
+  height: 30px;
+  width: 200px;
+  text-align: right;
+}
+
+#modal #container #max {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 0.4em;
+  margin-right: 23px;
+}
+
+#modal #container #error {
+  text-align: center;
+  margin-top: 0.4em;
+  color: red;
+}
+
+#modal #container .actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-top: 1em;
+}
+
+#modal #container .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 3em;
+  cursor: pointer;
+}
+
+#modal #container .actions .invest {
+  background-color: lightseagreen;
+  color: white;
+}
+
+#modal #container .actions .rent {
+  background-color: lightcoral;
+  color: white;
+}
+#modal #container {
+  background-color: white;
+  padding: 1.4em;
+  border-radius: 12px;
+}
+
+#modal #container h1 {
+  text-align: center;
+}
+
+#modal #container .fieldContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal #container .fieldTitle {
+  flex: 1;
+  width: 80px;
+}
+
+#modal #container .field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+
+#modal #container .field span {
+  font-size: 18px;
+}
+
+#modal #container .field input {
+  margin-left: 2em;
+  margin-right: 0.4em;
+  height: 30px;
+  width: 260px;
+  text-align: right;
+}
+
+#modal #container .field span.spacer {
+  width: 17px;
+}
+
+#modal #container #error {
+  text-align: center;
+  margin-top: 0.4em;
+  color: red;
+}
+
+#modal #container .actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-top: 1em;
+}
+
+#modal #container .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 3em;
+  cursor: pointer;
+}
+
+#modal #container .actions .addProperty {
+  background-color: lightseagreen;
+  color: white;
+}
+#list {
+  border-top: 0px solid black;
+  padding-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.property {
+  width: 270px;
+  border: 1px solid white;
+  border-radius: 14px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.property:last-child {
+  margin-right: 0em;
+}
+
+.property .photoContainer {
+  height: 240px;
+  width: 270px;
+}
+
+.property .photoContainer .locked {
+  position: absolute;
+  height: 240px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.property .photoContainer .locked span {
+  font-weight: bold;
+  font-size: 30px;
+  color: lightblue;
+  border: 4px solid lightblue;
+  border-radius: 46%;
+  padding: 1em 1.6em;
+}
+
+.property .photoContainer .photo {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.property .description {
+  padding: 0.5em;
+}
+
+.property .descriptionContainer {
+  border-top: none;
+  border-left: 1px solid cornflowerblue;
+  border-right: 1px solid cornflowerblue;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-bottom: 1px solid cornflowerblue;
+  height: 344px;
+}
+
+.property .description .addressContainer {
+  position: relative;
+}
+
+.property .description .address {
+  margin-bottom: 0.5em;
+}
+
+.property .description .ownerBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: lightseagreen;
+  padding: 6px 10px;
+  border: 1px solid lightseagreen;
+}
+
+.property .description .title {
+  padding-bottom: 0.1em;
+}
+
+.property .description .title:nth-child(1) {
+  font-weight: bold;
+}
+
+.property .description .title:nth-child(2) {
+  padding-bottom: 0.1em;
+  font-size: 13px;
+}
+
+.property .description .title:nth-child(3) {
+  padding-bottom: 0.1em;
+  font-size: 13px;
+}
+
+.property .description .funding,
+.property .description .yourFunding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property .description .yourFunding {
+  margin-bottom: 1em
+}
+
+.property .description .renting,
+.property .description .yourRent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property .actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0 0 0;
+  flex-direction: column;
+}
+
+.property .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 3em;
+  cursor: pointer;
+  margin-bottom: 0.4em;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.property .actions .invest {
+  border: 1px solid lightseagreen;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.property .actions .cancel {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+.property .actions .rent {
+  border: 1px solid lightsalmon;
+  background-color: lightsalmon;
+  color: white;
+}
+
+.property .actions .rented {
+  border: 1px solid darkred;
+  color: darkred;
+}
+
+.property .actions .paid {
+  border: 1px solid darkblue;
+  color: darkblue;
+  cursor: auto;
+}
+
+.property .actions .occupied {
+  border: 1px solid darkgrey;
+  color: darkgrey;
+}
+
+.property .actions .distribute {
+  border: 1px solid darkcyan;
+  color: darkcyan;
+}
+
+.property .actions .pastDue {
+  border: 1px solid darkred;
+  background-color: darkred;
+  color: white;
+  cursor: auto;
+}
+
+.property .actions .finalize {
+  border: 1px solid black;
+  color: black;
+}
+#modal #container h1 {
+  text-align: center;
+}
+
+#modal #container .message {
+  font-size: 17px;
+  text-align: center;
+}
+
+#modal #container .actions {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-top: 1em;
+}
+
+#modal #container .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 2em;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+#modal #container .actions .yes {
+  background-color: lightseagreen;
+  color: white;
+}
+
+#modal #container .actions .no {
+  background-color: white;
+  color: lightseagreen;
+  border: 1px solid lightseagreen;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -1,0 +1,72 @@
+#modal #container {
+  background-color: white;
+  padding: 1.4em;
+  border-radius: 12px;
+}
+
+#modal #container h1 {
+  text-align: center;
+}
+
+#modal #container .fieldContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal #container .fieldTitle {
+  flex: 1;
+  width: 80px;
+}
+
+#modal #container .field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+
+#modal #container .field span {
+  font-size: 18px;
+}
+
+#modal #container .field input {
+  margin-left: 2em;
+  margin-right: 0.4em;
+  height: 30px;
+  width: 260px;
+  text-align: right;
+}
+
+#modal #container .field span.spacer {
+  width: 17px;
+}
+
+#modal #container #error {
+  text-align: center;
+  margin-top: 0.4em;
+  color: red;
+}
+
+#modal #container .actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-top: 1em;
+}
+
+#modal #container .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 3em;
+  cursor: pointer;
+}
+
+#modal #container .actions .addProperty {
+  background-color: lightseagreen;
+  color: white;
+}

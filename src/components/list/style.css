@@ -1,0 +1,6 @@
+#list {
+  border-top: 0px solid black;
+  padding-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}

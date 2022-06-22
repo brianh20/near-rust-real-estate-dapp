@@ -1,0 +1,65 @@
+#modal #container {
+  background-color: white;
+  padding: 1.4em;
+  border-radius: 12px;
+}
+
+#modal #container h1 {
+  text-align: center;
+}
+
+#modal #container .field {
+  display: flex;
+  align-items: center;
+}
+
+#modal #container .field span {
+  font-size: 18px;
+}
+
+#modal #container .field input {
+  margin-left: 2em;
+  margin-right: 0.4em;
+  height: 30px;
+  width: 200px;
+  text-align: right;
+}
+
+#modal #container #max {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 0.4em;
+  margin-right: 23px;
+}
+
+#modal #container #error {
+  text-align: center;
+  margin-top: 0.4em;
+  color: red;
+}
+
+#modal #container .actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-top: 1em;
+}
+
+#modal #container .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 3em;
+  cursor: pointer;
+}
+
+#modal #container .actions .invest {
+  background-color: lightseagreen;
+  color: white;
+}
+
+#modal #container .actions .rent {
+  background-color: lightcoral;
+  color: white;
+}

@@ -1,0 +1,182 @@
+.property {
+  width: 270px;
+  border: 1px solid white;
+  border-radius: 14px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.property:last-child {
+  margin-right: 0em;
+}
+
+.property .photoContainer {
+  height: 240px;
+  width: 270px;
+}
+
+.property .photoContainer .locked {
+  position: absolute;
+  height: 240px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.property .photoContainer .locked span {
+  font-weight: bold;
+  font-size: 30px;
+  color: lightblue;
+  border: 4px solid lightblue;
+  border-radius: 46%;
+  padding: 1em 1.6em;
+}
+
+.property .photoContainer .photo {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.property .description {
+  padding: 0.5em;
+}
+
+.property .descriptionContainer {
+  border-top: none;
+  border-left: 1px solid cornflowerblue;
+  border-right: 1px solid cornflowerblue;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-bottom: 1px solid cornflowerblue;
+  height: 344px;
+}
+
+.property .description .addressContainer {
+  position: relative;
+}
+
+.property .description .address {
+  margin-bottom: 0.5em;
+}
+
+.property .description .ownerBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: lightseagreen;
+  padding: 6px 10px;
+  border: 1px solid lightseagreen;
+}
+
+.property .description .title {
+  padding-bottom: 0.1em;
+}
+
+.property .description .title:nth-child(1) {
+  font-weight: bold;
+}
+
+.property .description .title:nth-child(2) {
+  padding-bottom: 0.1em;
+  font-size: 13px;
+}
+
+.property .description .title:nth-child(3) {
+  padding-bottom: 0.1em;
+  font-size: 13px;
+}
+
+.property .description .funding,
+.property .description .yourFunding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property .description .yourFunding {
+  margin-bottom: 1em
+}
+
+.property .description .renting,
+.property .description .yourRent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property .actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0 0 0;
+  flex-direction: column;
+}
+
+.property .actions div {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.6em 3em;
+  cursor: pointer;
+  margin-bottom: 0.4em;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.property .actions .invest {
+  border: 1px solid lightseagreen;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.property .actions .cancel {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+.property .actions .rent {
+  border: 1px solid lightsalmon;
+  background-color: lightsalmon;
+  color: white;
+}
+
+.property .actions .rented {
+  border: 1px solid darkred;
+  color: darkred;
+}
+
+.property .actions .paid {
+  border: 1px solid darkblue;
+  color: darkblue;
+  cursor: auto;
+}
+
+.property .actions .occupied {
+  border: 1px solid darkgrey;
+  color: darkgrey;
+}
+
+.property .actions .distribute {
+  border: 1px solid darkcyan;
+  color: darkcyan;
+}
+
+.property .actions .pastDue {
+  border: 1px solid darkred;
+  background-color: darkred;
+  color: white;
+  cursor: auto;
+}
+
+.property .actions .finalize {
+  border: 1px solid black;
+  color: black;
+}
